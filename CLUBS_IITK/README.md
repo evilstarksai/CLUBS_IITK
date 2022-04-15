@@ -18,7 +18,7 @@
 ### Installation
 
 1. Download as as Zip or Clone this project
-2. Move this project to Root Directory
+2. Move this project to the afore-mentioned Directory
 ```
 Local Disc C: -> xampp -> htdocs -> 'this project'
 ```
@@ -26,9 +26,9 @@ Local Disc C: -> xampp -> htdocs -> 'this project'
 
 3. Open XAMPP Control Panel and Start 'Apache' and 'MySQL'
 
-4. Import Database
+4. Importing Database
 
-a. Open 'phpmyadmin' in your browser
+a. Open localhost in your browser and go to 'phpmyadmin'
 b. Create a Database
 c. Import the SQL file provided with this project
 
@@ -54,4 +54,5 @@ $db_select = mysqli_select_db($conn, DB_NAME) or die(mysqli_error()); //SElectin
 ```
 
 6. Now, Open the project in your browser. It should run perfectly.
+ loclahost/CLUBS_IITK
 
