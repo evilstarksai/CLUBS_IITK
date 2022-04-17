@@ -29,7 +29,7 @@ Local Disc C: -> xampp -> htdocs -> 'this project'
 4. Importing Database
 
 a. Open localhost in your browser and go to 'phpmyadmin'
-b. Create a Database
+b. Create a Database with the name 'clubs_iitk'  without the quotes
 c. Import the SQL file provided with this project
 
 5. Make Changes to settings
@@ -43,15 +43,15 @@ session_start();
 //Create Constants to Store Non Repeating Values
 define('SITEURL', 'http://localhost/CLUBS_IITK/'); //Update the home URL of the project if you have changed port number or it's live on server
 define('LOCALHOST', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
+define('DB_USERNAME', 'root');        
+define('DB_PASSWORD', '');                     // the password here should match the password for MySQL 
 define('DB_NAME', 'clubs_iitk');
     
 $conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error()); //Database Connection
 $db_select = mysqli_select_db($conn, DB_NAME) or die(mysqli_error()); //SElecting Database 
 
 ?>
-```
+``` 
 
 6. Now, Open the project in your browser. It should run perfectly.
  loclahost/CLUBS_IITK
