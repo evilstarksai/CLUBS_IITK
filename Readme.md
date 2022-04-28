@@ -25,6 +25,8 @@ Local Disc C: -> xampp -> htdocs -> 'this project'
 *Local Disk C is the location where xampp was installed*
 
 3. Open XAMPP Control Panel and Start 'Apache' and 'MySQL'
+     If the 'MySQL' doesnt start( it shows an error regarding an unavailable port), click the config button in the MySQL row in the control panel.
+     after clicking the config button, open the my.ini text file in the dropdown. This file contains a port-number mentioned several times(3306). Change the port        number to some other number which is free/available in the netstat window.(The netstat button is available on the right in the control panel)
 
 4. Importing Database
 
@@ -34,7 +36,7 @@ c. Import the SQL file provided with this project
 
 5. Make Changes to settings
 
-Go to 'config' folder and Open 'constants.php' file. Then make changes on following constants
+Go to 'config' folder and Open 'constants.php' file. Then make changes shown in comments below.
 ```php
 <?php 
 //Start Session
@@ -53,5 +55,7 @@ $db_select = mysqli_select_db($conn, DB_NAME) or die(mysqli_error()); //SElectin
 ?>
 ``` 
 
-6. Now, Open the project in your browser. It should run perfectly.
- localhost/CLUBS_IITK
+
+6. Now, Open the project in your browser using 'localhost/CLUBS_IITK'. 
+    It should run perfectly.
+ 
